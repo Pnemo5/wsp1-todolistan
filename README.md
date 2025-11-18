@@ -19,19 +19,10 @@ Du kommer att bygga en TODO-lista som en webbapplikation med av de tekniker vi h
 - Vid slutinlämning: Lämna in en liten film på classroom som visar applikationen.
 - Bedömning: F/E enligt beskrivning: https://github.com/ntijoh/WTF24/blob/main/Bed%C3%B6mning%20Webbserver%201.md
 
-## Lektionsplanering
-
-| Vecka 	| Vad                                    	        |
-|-------	|---------------------------------------------------|
-| 46     	| Databasdesign - bild och ev text i loggboken.     |
-| 47     	| Arbete                                            |
-| 48     	| Arbete                                 	        |
-| 49   	    | Arbete                              	            |
-| 50     	| Slutinlämning                                 	|
-| 51     	| _Julavslutning  torsdagen v 51_                   |
-
 ## Installation
 
 - Ladda ner de biblotek (tex. SQLite) du behöver med `bundle` (eller `bundle install` som är samma sak)
 - Starta appen med `rake` Då körs även seed automatiskt ifall ingen databasfil finns.
 - Kör seeder-filen med `rake seed` för att återställa databasen från seed-filen.
+
+Använd verktyget SQLite Viewer: https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer eller DB Browser för att arbeta fram och testa SQL-kod.

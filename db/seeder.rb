@@ -15,16 +15,21 @@ class Seeder
   end
 
   def self.drop_tables
-    puts "   ToDo"
-    db.execute('DROP TABLE IF EXISTS fruits')
+    db.execute('DROP TABLE IF EXISTS todos')
   end
 
   def self.create_tables
-    puts "   ToDo"
+    db.execute('CREATE TABLE todos (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                category_id INTEGER 
+                description TEXT)')
   end
 
   def self.populate_tables
-    puts "   ToDo"
+    db.execute('INSERT INTO todos (name, description) VALUES ("Köp mjölk", "3 lite mellanmjölk, eko")')
+    db.execute('INSERT INTO todos (name, description) VALUES ("Köp julgran", "En rödgran")')
+    db.execute('INSERT INTO todos (name, description) VALUES ("Pynta gran", "Glöm inte lamporna i granen och tomten")')
   end
 
   private
