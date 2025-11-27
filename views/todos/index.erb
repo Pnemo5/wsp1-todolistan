@@ -1,0 +1,19 @@
+<h2>Alla Todos just nu!<h2>
+
+<ul>
+    <% @todos.each do |todos|%>
+    <li>
+        <a href="/todos/<%= todos["id"]%>">
+            <%= todos["name"] %>
+        </a>
+
+        <form class="delete" action="/todos/<%=todos["id"]%>/delete" method="post">
+            <input type="submit" value="Färdig">
+        </form>
+        
+        <form class="change" action="/todos/<%=todos["id"]%>/change" method="post">
+            <input type="submit" value="Ändra">
+        </form>
+    </li>
+    <% end %>
+</ul>

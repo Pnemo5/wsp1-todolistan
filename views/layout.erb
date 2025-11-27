@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt #2</title>
+    <title>Din personliga ToDo lista!</title>
     <link rel="stylesheet" type="text/css" href="/style.css?<%=Time.now.to_i%>">
 </head>
+
+
 <body>
+  <header>
+    <h1>DoToDo</h1>
+  </header>
+  <hr>
+  <nav>
+    <ul>
+      <li><a href="/todos">Alla dina Todos</a></li>
+      <li><a href="/todos/new">Ny Todo</a></li>
+
+    </ul>
+  </nav>
+  <hr>
+  <%= yield %>
+  <hr>
   <img src="/img/glhf.png">
 </body>
 </html>
